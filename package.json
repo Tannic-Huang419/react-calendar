@@ -2,10 +2,10 @@
   "name": "react-calendar-monorepo",
   "version": "1.0.0",
   "description": "react-calendar monorepo",
-  "private": true,
   "type": "module",
+  "private": true,
   "workspaces": [
-    "packages/*",
+    "packages/react-calendar",
     "test"
   ],
   "scripts": {

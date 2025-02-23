@@ -2396,17 +2396,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-calendar-monorepo@workspace:.":
+"react-calendar-customize-navigation@workspace:packages/react-calendar, react-calendar@workspace:packages/react-calendar":
   version: 0.0.0-use.local
-  resolution: "react-calendar-monorepo@workspace:."
-  dependencies:
-    husky: "npm:^9.0.0"
-  languageName: unknown
-  linkType: soft
-
-"react-calendar@workspace:packages/react-calendar":
-  version: 0.0.0-use.local
-  resolution: "react-calendar@workspace:packages/react-calendar"
+  resolution: "react-calendar-customize-navigation@workspace:packages/react-calendar"
   dependencies:
     "@biomejs/biome": "npm:1.9.0"
     "@testing-library/dom": "npm:^10.0.0"
@@ -2434,6 +2426,14 @@ __metadata:
   peerDependenciesMeta:
     "@types/react":
       optional: true
+  languageName: unknown
+  linkType: soft
+
+"react-calendar-monorepo@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "react-calendar-monorepo@workspace:."
+  dependencies:
+    husky: "npm:^9.0.0"
   languageName: unknown
   linkType: soft
 

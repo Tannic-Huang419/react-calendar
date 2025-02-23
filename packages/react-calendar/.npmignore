@@ -1,0 +1,8 @@
+# 忽略根目录下所有文件
+/*
+# 但不排除 /packages/react-calendar/
+**/node_modules
+
+# 如果有其他不需要发布的文件或目录，继续添加规则
+node_modules/
+.husky/

@@ -1,11 +1,15 @@
 {
-  "name": "react-calendar",
-  "version": "5.1.0",
+  "name": "react-calendar-customize-navigation2",
+  "version": "1.0.2",
+  "private": false,
   "description": "Ultimate calendar for your React app.",
   "type": "module",
   "sideEffects": [
     "*.css"
   ],
+  "engines": {
+    "node": ">=16.13.0 <21"
+  },
   "main": "./dist/cjs/index.js",
   "module": "./dist/esm/index.js",
   "source": "./src/index.ts",
@@ -24,7 +28,7 @@
     "build-js-cjs": "tsc --project tsconfig.build.json --outDir dist/cjs --module commonjs --moduleResolution node --verbatimModuleSyntax false",
     "build-js-cjs-package": "echo '{\n  \"type\": \"commonjs\"\n}' > dist/cjs/package.json",
     "clean": "rimraf dist",
-    "copy-styles": "cpy 'src/**/*.css' dist",
+    "copy-styles": "cpy src/**/*.css dist",
     "format": "biome format",
     "lint": "biome lint",
     "prepack": "yarn clean && yarn build",
@@ -41,8 +45,8 @@
     "react"
   ],
   "author": {
-    "name": "Wojciech Maj",
-    "email": "kontakt@wojtekmaj.pl"
+    "name": "Tannic Huang419",
+    "email": "Tanniccx330@outlook.com"
   },
   "license": "MIT",
   "dependencies": {
@@ -80,7 +84,7 @@
   },
   "publishConfig": {
     "access": "public",
-    "provenance": true
+    "provenance": false
   },
   "files": [
     "dist",
@@ -88,8 +92,9 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/wojtekmaj/react-calendar.git",
+    "url": "git+https://github.com/Tannic-Huang419/react-calendar.git",
     "directory": "packages/react-calendar"
   },
-  "funding": "https://github.com/wojtekmaj/react-calendar?sponsor=1"
+  "funding": "https://github.com/Tannic-Huang419/react-calendar?sponsor=1",
+  "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e"
 }
