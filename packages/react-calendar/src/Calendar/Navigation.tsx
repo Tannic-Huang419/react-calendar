@@ -147,6 +147,13 @@ type NavigationProps = {
    */
   view: RangeType;
   views: string[];
+
+   /**
+   * Display something in Navigation.
+   *
+   * @example <div>Today:xxxx</div>
+   */
+  headLeftLabel?: React.ReactNode;
 };
 
 export default function Navigation({
@@ -172,6 +179,7 @@ export default function Navigation({
   showDoubleView,
   view,
   views,
+  headLeftLabel
 }: NavigationProps): React.ReactElement {
   const drillUpAvailable = views.indexOf(view) > 0;
   const shouldShowPrevNext2Buttons = view !== 'century';
@@ -279,6 +287,7 @@ export default function Navigation({
 
   return (
     <div className={className}>
+      {headLeftLabel}
       {prev2Label !== null && shouldShowPrevNext2Buttons ? (
         <button
           aria-label={prev2AriaLabel}

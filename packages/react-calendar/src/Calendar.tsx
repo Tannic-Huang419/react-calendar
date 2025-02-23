@@ -419,6 +419,13 @@ export type CalendarProps = {
    * @example 'year'
    */
   view?: View;
+
+  /**
+   * navigation left lable 
+   *
+   * @example '<div>left lable</div>'
+   */
+  headLeftLabel?: React.ReactNode;
 };
 
 function toDate(value: Date | string): Date {
@@ -656,6 +663,7 @@ const Calendar: React.ForwardRefExoticComponent<CalendarProps & React.RefAttribu
       tileDisabled,
       value: valueProps,
       view: viewProps,
+      headLeftLabel
     } = props;
 
     const [activeStartDateState, setActiveStartDateState] = useState<Date | null | undefined>(
@@ -1109,6 +1117,7 @@ const Calendar: React.ForwardRefExoticComponent<CalendarProps & React.RefAttribu
           showDoubleView={showDoubleView}
           view={view}
           views={views}
+          headLeftLabel={headLeftLabel}
         />
       );
     }

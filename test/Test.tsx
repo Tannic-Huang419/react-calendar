@@ -220,6 +220,7 @@ export default function Test() {
               activeStartDate={activeStartDate}
               value={value}
               view={view}
+              headLeftLabel={(<div>9</div>)}
             />
             <p>Uncontrolled:</p>
             <Calendar
